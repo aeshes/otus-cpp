@@ -5,7 +5,7 @@ on:
     branches:
       - master
       - feature/github_actions
-      - homework01
+      - tasks/01-build-systems
 
 jobs:
   build:
