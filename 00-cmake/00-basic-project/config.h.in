@@ -1,0 +1,4 @@
+#pragma once
+
+#define HELLOWORLD_VERSION_MAJOR @HelloWorld_VERSION_MAJOR@
+#define HELLOWORLD_VERSION_MINOR @HelloWorld_VERSION_MINOR@
