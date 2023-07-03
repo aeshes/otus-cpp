@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(test)
+
+enable_testing()
+find_package(gtest REQUIRED)
+
+add_executable(unittests gtest_version.cpp)
+
+add_test(NAME unittests COMMAND unittests)
