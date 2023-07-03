@@ -1,10 +1,19 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(test)
+project(helloworld-tests)
 
-enable_testing()
 find_package(gtest REQUIRED)
+find_package(Threads REQUIRED)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+include_directories(
+    ../include
+    ${GTEST_INCLUDE_DIRS}
+)
 
 add_executable(unittests gtest_version.cpp)
 
+enable_testing()
 add_test(NAME unittests COMMAND unittests)
