@@ -2,23 +2,23 @@ cmake_minimum_required(VERSION 3.5)
 
 project(Main VERSION 0.0.1)
 
-add_executable(helloworld_cli main.cpp)
+add_executable(helloworld main.cpp)
 
 set_target_properties(
-    helloworld_cli PROPERTIES
+    helloworld PROPERTIES
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
 )
 
 target_include_directories(
-    helloworld_cli
+    helloworld
     PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
-target_link_libraries(helloworld_cli PRIVATE version)
+target_link_libraries(helloworld PRIVATE version)
 
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
+install(TARGETS helloworld RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
