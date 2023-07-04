@@ -14,6 +14,7 @@ add_executable(
 
 find_package(GTest)
 
+target_include_directories(test PRIVATE src)
 target_include_directories(test PRIVATE ${GTEST_INCLUDE_DIRS})
 target_link_libraries(test PRIVATE ${GTEST_BOTH_LIBRARIES})
 
