@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Main VERSION 0.0.1)
+project(Main VERSION ${PROJECT_VERSION})
 
 add_executable(helloworld main.cpp)
 

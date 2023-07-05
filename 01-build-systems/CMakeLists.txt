@@ -6,6 +6,8 @@ set(CMAKE_BUILD_TYPE Debug)
 
 project(HelloWorld VERSION ${PROJECT_VERSION})
 
+message("Patch version: ", ${PATCH_VERSION})
+
 add_subdirectory(lib)
 add_subdirectory(src)
 add_subdirectory(tests)
