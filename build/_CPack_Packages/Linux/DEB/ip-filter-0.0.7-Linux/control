@@ -1,0 +1,9 @@
+Architecture: 
+Description: ip-filter built using CMake
+Maintainer: example@example.ru
+Package: ip-filter
+Priority: optional
+Section: devel
+Version: 0.0.7
+Installed-Size: 40
+
