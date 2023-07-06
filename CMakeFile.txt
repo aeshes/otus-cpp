@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(ip-filter)
+
+set(CXX_STANDARD 14)
+set(CXX_STANDARD_REQUIRED ON)
+
+add_executable(ip-filter ip_filter.cpp)
