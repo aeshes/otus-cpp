@@ -16,6 +16,11 @@ if (WITH_BOOST_TEST)
 		INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 	)
 
+	target_include_directories(test_version
+		PRIVATE
+		${CMAKE_CURRENT_SOURCE_DIR}/../src/lib
+	)
+
 	target_link_libraries(test_version
 		${Boost_LIBRARIES}
 		version

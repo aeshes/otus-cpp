@@ -8,6 +8,7 @@ project(helloworld VERSION ${PROJECT_VERSION})
 option(WITH_BOOST_TEST "Whether to build Boost test" ON)
 
 add_subdirectory(src)
+add_subdirectory(test)
 
 install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
 
